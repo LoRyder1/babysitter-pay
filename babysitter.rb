@@ -28,5 +28,9 @@ class BabysitterPay
   def midnight_hours
     24 - @bedtime
   end
+
+  def twilight_hours
+    @stop - 24
+  end
 end
 
