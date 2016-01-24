@@ -15,7 +15,13 @@ class BabysitterPay
   attr_reader :start, :stop
   def initialize start, stop
     @start, @stop = start, stop
+    round
     @bedtime = 22
+  end
+
+  def round
+    @start = @start.round
+    @stop =  @stop.round
   end
 
   def valid_schedule?
