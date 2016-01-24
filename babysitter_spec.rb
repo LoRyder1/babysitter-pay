@@ -30,4 +30,10 @@ describe BabysitterPay do
       expect(@sit1.stop).to eq 27
     end
   end
+
+  describe 'nightly charge' do
+    it 'total for the night in dollars' do
+      expect(@sitting.total).to eq 140
+    end
+  end
 end
