@@ -2,7 +2,7 @@ require_relative 'babysitter'
 
 describe BabysitterPay do
   before(:each) do
-    @sitting = BabysitterPay.new(17, 4)
+    @sitting = BabysitterPay.new(17,28)
   end
 
   describe 'start stop schedule' do
