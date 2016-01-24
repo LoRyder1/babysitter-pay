@@ -39,6 +39,10 @@ class BabysitterPay
   def twilight_hours
     @stop - 24
   end
+
+  def total
+    (12*bedtime_hours) + (8*midnight_hours) + (16*twilight_hours)
+  end
 end
 
 # 60 + 16 + 64
