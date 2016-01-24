@@ -10,4 +10,10 @@ describe BabysitterPay do
       expect(@sitting.valid_schedule?).to eq true
     end
   end
+
+  describe 'counting hours' do
+    it 'counts from start to bedtime hours' do
+      expect(@sitting.bedtime_hours).to eq 5
+    end
+  end
 end

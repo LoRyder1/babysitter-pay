@@ -14,6 +14,7 @@
 class BabysitterPay
   def initialize start, stop
     @start, @stop = start, stop
+    @bedtime = 22
   end
 
   def valid_schedule?
@@ -21,4 +22,3 @@ class BabysitterPay
   end
 end
 
-# 5pm to 4am
