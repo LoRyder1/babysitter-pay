@@ -23,5 +23,11 @@ describe BabysitterPay do
     it 'counts from midnight to end' do
       expect(@sitting.twilight_hours).to eq 4
     end
+
+    it 'rounds hours' do 
+      @sit1 = BabysitterPay.new(17.5,27.25)
+      expect(@sit1.start).to eq 18
+      expect(@sit1.stop).to eq 27
+    end
   end
 end

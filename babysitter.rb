@@ -12,6 +12,7 @@
 # I want to calculate my nightly charge
 
 class BabysitterPay
+  attr_reader :start, :stop
   def initialize start, stop
     @start, @stop = start, stop
     @bedtime = 22
