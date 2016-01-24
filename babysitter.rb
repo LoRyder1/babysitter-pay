@@ -12,7 +12,13 @@
 # I want to calculate my nightly charge
 
 class BabysitterPay
+  def initialize start, stop
+    @start, @stop = start, stop
+  end
 
+  def valid_schedule?
+    @start >= 17 && @stop <= 4 
+  end
 end
 
 # 5pm to 4am
