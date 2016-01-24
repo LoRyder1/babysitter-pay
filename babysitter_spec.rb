@@ -15,5 +15,9 @@ describe BabysitterPay do
     it 'counts from start to bedtime hours' do
       expect(@sitting.bedtime_hours).to eq 5
     end
+
+    it 'counts from bedtime to midnight hours' do
+      expect(@sitting.midnight_hours).to eq 2
+    end
   end
 end

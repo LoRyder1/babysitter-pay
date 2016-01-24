@@ -18,7 +18,7 @@ class BabysitterPay
   end
 
   def valid_schedule?
-    @start >= 17 && @stop <= 4 
+    @start >= 17 && @stop <= 28 
   end
 
   def bedtime_hours
