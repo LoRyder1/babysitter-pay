@@ -35,5 +35,10 @@ describe BabysitterPay do
     it 'total for the night in dollars' do
       expect(@sitting.total).to eq 140
     end
+
+    it 'total for different hours' do
+      @sit1 = BabysitterPay.new(18.5, 26.25)
+      expect(@sit1.total).to eq 84
+    end
   end
 end
