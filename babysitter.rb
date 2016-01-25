@@ -10,21 +10,18 @@
 # As a babysitter
 # In order to get paid for 1 night of work
 # I want to calculate my nightly charge
+
 class BabysitterPay
   attr_reader :start, :stop
   def initialize start, stop
     @start, @stop = start, stop
-    round
+    round_and_convert
     @bedtime = 22
   end
 
-  def convert_time
-    # if @start
-  end
-
-  def round
-    @start = @start.round
-    @stop =  @stop.round
+  def round_and_convert
+    @start = @start.round + 12
+    @stop =  @stop.round + 24
   end
 
   def valid_schedule?
@@ -51,7 +48,7 @@ class BabysitterPay
   end
 end
 
-@sit1 = BabysitterPay.new(18.5, 26.25)
+# @sit1 = BabysitterPay.new(18.5, 26.25)
 
 # 19, 26
 # 3, 2, 2

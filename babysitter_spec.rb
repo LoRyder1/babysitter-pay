@@ -2,7 +2,7 @@ require_relative 'babysitter'
 
 describe BabysitterPay do
   before(:each) do
-    @sitting = BabysitterPay.new(17,28)
+    @sitting = BabysitterPay.new(5,4)
   end
 
   describe 'start stop schedule' do
@@ -25,7 +25,7 @@ describe BabysitterPay do
     end
 
     it 'rounds hours' do 
-      @sit1 = BabysitterPay.new(17.5,27.25)
+      @sit1 = BabysitterPay.new(5.5,3.25)
       expect(@sit1.start).to eq 18
       expect(@sit1.stop).to eq 27
     end
@@ -37,7 +37,7 @@ describe BabysitterPay do
     end
 
     it 'total for different hours' do
-      @sit1 = BabysitterPay.new(18.5, 26.25)
+      @sit1 = BabysitterPay.new(6.5,2.25)
       expect(@sit1.total).to eq 84
     end
   end
